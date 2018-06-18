@@ -89,19 +89,19 @@ This services provides the following actions:
         * Response Payload
             ```json
             {
-                "plans" : [{
-                    "id" : "{planId}",
-                    "name" : "{planName}",
-                    "funds": [{
-                        "id" : "{fundId}",
-                        "name" : "{fundName}",
-                        "contributions" : [{
-                            "amount" : "{amount}",
-                            "date" : "{requestDate}"
-                        }]
-                        "total" : "{total of contributions.amount}"
+                "plans":[{
+                    "id":"{planId}",
+                    "name":"{planName}",
+                    "funds":[{
+                        "id":"{fundId}",
+                        "name":"{fundName}",
+                        "contributions":[{
+                            "amount":"{amount}",
+                            "date":"{requestDate}"
+                        }],
+                        "total":"{total of contributions.amount}"
                     }],
-                    "total" : "{total of funds.total}"
+                    "total":"{total of funds.total}"
                 }]
                 
             }
