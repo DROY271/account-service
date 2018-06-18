@@ -12,3 +12,28 @@ This services provides the following actions:
 
 ![ER Diagram](account-er-model.png)
 
+## Service operations
+1. Create account for participant
+    REST Details - POST /accounts/{participantId}
+    SOAP Endpoint - /services
+    
+    ```xml
+      <CreateAccount participant-id="{participantId}">
+      </CreateAccount>
+    ```
+
+2. Enroll participant in plan
+    REST Details - POST /accounts/{participantId}/plans
+  
+      ```json
+      {
+         "planId": {planId}
+      }
+      ```
+
+  SOAP Endpoint /services
+  
+    ```xml
+      <EnrollParticipantInPlan participant-id="{participantId}" plan-id="{planId}">
+      </EnrollParticipantInPlan>
+    ```
